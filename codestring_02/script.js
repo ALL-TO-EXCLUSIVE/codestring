@@ -1,3 +1,5 @@
+//i've added the comments for the understading, and yeah its written by me(dev patel)
+
 // Get the display element from the HTML document
 const display = document.getElementById('display');
 
