@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather";
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+.grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+        "exp skill"
+        "edu skill"
+        "pro skill"
+    ;
+}
+
+#experienceSection {
+    grid-area: exp;
+}
+
+#educationSection {
+    grid-area: edu;
+}
+
+#projectSection {
+    grid-area: pro;
+}
+
+#skillsSection {
+    grid-area: skill;
+    padding: 0 50px;
+}
+
+
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#address {
+    line-height: 1.7;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #0095ff;
+    font-family: "open sans";
+    font-weight: bold;
+
+}
+
+.skills,
+.languages {
+    list-style: disc;
+    list-style-position: inside;
+    gap: 4px;
+}
+
+.skills li,
+.languages li {
+    font-size: 12px;
+    color: #6f6f6f;
+    display: list-item;
+}
+
+
+#basicDetails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name h1 {
+    font-size: 40px;
+}
+
+span {
+    color: #6f6f6f;
+}
+
+#contactLinks {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+a {
+    color: #0095ff;
+    text-decoration: none;
+    font-family: "open sans";
+}
+
+
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#experience .job {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#experience .job .workedas,
+.studied,
+.project-desc {
+    font-size: 12px;
+    color: #6f6f6f;
+    line-height: 1.7;
+
+}
+
+#education li .studied {
+    line-height: 1.7;
+    color: #6f6f6f;
+}
