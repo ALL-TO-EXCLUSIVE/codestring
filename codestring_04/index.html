@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  </head>
+  <body>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+    <progress id="scroll-progress" max="100" value="0"></progress>
+    <header>
+      <div class="container">
+        <h1>Dev Patel</h1>
+        <button class="menu-toggle" aria-label="Open Menu">
+          <span class="menu-icon"></span>
+        </button>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/dev-patel-6790b8319"><img class="linkedin" src="./images/linkedin.svg" alt=""></a>
+              <a href="https://www.instagram.com/ALLTOEXCLUSIVE"><img class="instagram" src="./images/instagram.svg" alt=""></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+      <a title="go to top" href="#" class="back-to-top"><i data-feather="arrow-up" data-size="10"></i></a>
+    <section id="about" class="container">
+      <div id="aboutme">
+        <img title="dev patel" src="./images/dev.jpg" alt="" />
+        <p>
+          Hello! 👋 I'm Dev, a passionate frontend developer with a knack for
+          creating seamless and interactive web experiences. I enjoy building
+          everything from small business sites to rich interactive web apps.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li class="skill" title="html"><img src="./images/html.svg" alt=""></li>
+        <li class="skill" title="css"><img src="./images/css.svg" alt=""></li>
+        <li class="skill" title="javascript"><img src="./images/js.svg" alt=""></li>
+        <li class="skill" title="gsap"><img src="./images/gsap.svg" alt=""></li>
+        <li class="skill" title="next js"><img src="./images/next.svg" alt=""></li>
+        <li class="skill" title="react js"><img src="./images/react.svg" alt=""></li>
+        <li class="skill" title="prisma ORM"><img src="./images/prisma.svg" alt=""></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="./images/applevision.project.gif" alt="">
+          <h3>Apple Vision</h3>
+          <p>I cloned the frontend of the Apple's Vision website, I learned so much about animations in this project.</p>
+          <a class="project-link" href="https://applevisiondev.netlify.app/">view <i class="ico" data-feather="arrow-up-right"></i></a>
+        </div>
+        <div class="project">
+          <img src="./images/artistdev.project.gif" alt="">
+          <h3>Artist's Portfolio.</h3>
+          <p>I built a portfolio website for artists, which they can use as a template.</p>
+          <a class="project-link" href="https://artistdev.netlify.app/">view <i class="ico" data-feather="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, feel free to drop me a line.</p>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div style="margin-top: 20px;">
+        <a  href="https://www.linkedin.com/in/dev-patel-6790b8319"><img class="linkedin" src="./images/linkedin.svg" alt=""></a>
+            <a  href="https://www.instagram.com/ALLTOEXCLUSIVE"><img class="instagram" src="./images/instagram.svg" alt=""></a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Dev Patel. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
